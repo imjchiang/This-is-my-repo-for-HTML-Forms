@@ -7,13 +7,39 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="results.html" method="GET">
+    <h1>We are FBI</h1>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <h2>Get Registered</h2>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age" min="1" max="120" required>
+        </div>
+        <div>
+            <h2>Fav Foods</h2>
+            <label for="bananas">Bananas</label>
+            <input type="checkbox" name="bananas" id="bananas">
 
+            <label for="apples">Apples</label>
+            <input type="checkbox" name="apples" id="apples">
+        </div>
+        <div>
+            <label for="file">File</label>
+            <input type="file" name="file" id="file">
+        </div>
 
+        <div>
+            <button type="submit">SUBMIT INFO</button>
+        </div>
     </form>
 
-
-    <script src="./keys.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
